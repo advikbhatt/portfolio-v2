@@ -14,7 +14,7 @@ const projects = [
     isNew: true,
     description:
       'Analyzed Spotify Top 50 tracks using data visualization techniques to compare various factors such as tempo, energy, and danceability.',
-    image: '/assets/project2.jpeg',
+    image: '/assets/spotify.png',
     tags: ['Data Visualization', 'Jupyter Notebook'],
   },
   {
@@ -100,60 +100,61 @@ export default function HorizontalSlider() {
     return () => ctx.revert();
   }, []);
 
-  return (
-    <section className="slider-section" ref={sectionRef}>
-      <div className="slider-container" ref={containerRef}>
-        <div className="slider-tab featured-card">
-          <div className="featured-labels">
-            <h1 className="featured-heading">FEATURED</h1>
-            <div className="featured-subblock">
-              <h1 className="featured-heading">PROJECTS</h1>
+return (
+  <section className="slider-section" ref={sectionRef}>
+    <div className="slider-container" ref={containerRef}>
+      {/* Featured Intro Card */}
+      <div className="slider-tab featured-card">
+        <div className="featured-labels">
+          <h1 className="featured-heading">FEATURED</h1>
+          <div className="featured-subblock">
+            <h1 className="featured-heading">PROJECTS</h1>
+          </div>
+        </div>
+
+        <p className="featured-description">
+          <span className="dropcap">All</span>an artisan, I like to start from raw matter and give life to an iconic product that makes your brand stand out — starting from a Visual Strategy that guides the client’s vision to reality.
+        </p>
+      </div>
+
+      {/* Project Cards */}
+      {projects.map((project, index) => (
+        <div
+          key={index}
+          className={`slider-tab aquerone-style ${activeIndex === index ? 'active' : ''}`}
+          onClick={() => setActiveIndex(index)}
+        >
+          {/* Left Spine */}
+          <div className="spine-left">
+            {project.title.toUpperCase()}
+            <br />
+            <span>{project.year}</span>
+          </div>
+
+          {/* Center Content */}
+          <div className="aquerone-main">
+            <div className="aquerone-tags">
+              {project.tags.map((tag, i) => (
+                <span key={i}>{tag}</span>
+              ))}
+            </div>
+            <h1 className="aquerone-title">{project.title}</h1>
+            <p className="aquerone-desc">{project.description}</p>
+            <div className="aquerone-img-wrap">
+              <img src={project.image} alt={project.title} />
             </div>
           </div>
 
-          <p className="featured-description">
-            <span className="dropcap">All</span>an artisan, I like to start from raw matter and give life to an iconic product that makes your brand stand out — starting from a Visual Strategy that guides the client’s vision to reality.
-          </p>
-        </div>
-
-        {projects.map((project, index) => (
-          <div
-            key={index}
-            className={`slider-tab ${activeIndex === index ? 'active' : ''}`}
-            onClick={() => setActiveIndex(index)}
-          >
-<div className="slider-title">
-  <h3 className="project-title">{project.title}</h3>
-  <div className="project-meta">
-    {project.isNew && <span className="slider-badge">NEW</span>}
-    <p className="slider-year">{project.year}</p>
-  </div>
-</div>
-
-
-            {activeIndex === index && (
-              <div className="slider-detail">
-                <div className="slider-tags">
-                  {project.tags.map((tag, i) => (
-                    <span key={i}>{tag}</span>
-                  ))}
-                </div>
-                <h2>{project.title}</h2>
-                <p>{project.description}</p>
-                {project.image && (
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="slider-img"
-                  />
-                )}
-              </div>
-            )}
-            
+          {/* Right Spine */}
+          <div className="spine-right">
+            PROJECT
+            <br />
+            <span>{project.year}</span>
           </div>
-          
-        ))}
-      </div>
-    </section>
-  );
+        </div>
+      ))}
+    </div>
+  </section>
+);
+
 }

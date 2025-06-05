@@ -1,4 +1,6 @@
-/* Entire section setup */
+/* Projects.css */
+
+/* Main section layout */
 .slider-section {
   background-color: #e7dfd8;
   height: 100vh;
@@ -7,7 +9,6 @@
   font-family: 'Georgia', serif;
 }
 
-/* Container for horizontal layout */
 .slider-container {
   display: flex;
   height: 100%;
@@ -15,135 +16,116 @@
   will-change: transform;
 }
 
-/* Each project tab */
 .slider-tab {
-  min-width: 220px;
+  width: 100vw;
   flex-shrink: 0;
-  border-right: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  background: #e7dfd8;
+  height: 100vh;
+  border-left: 1px solid #cfc6bb;
+  border-right: 1px solid #cfc6bb;
+  overflow: hidden;
+  background-color: #e7dfd8;
+}
+
+/* Aquerone-style three-panel layout */
+.slider-tab.aquerone-style {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.spine-left,
+.spine-right {
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  cursor: pointer;
-  padding: 20px 10px;
-  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  border-left: 1px solid #cfc6bb;
+  border-right: 1px solid #cfc6bb;
+  color: #111;
+  width: 100px;
+  background-color: #e7dfd8;
 }
 
-.slider-tab:hover {
-  background-color: #ded6ce;
+.spine-left span,
+.spine-right span {
+  font-size: 0.7rem;
+  font-style: italic;
+  opacity: 0.6;
+  margin-top: 8px;
 }
 
-/* Active tab expands and switches orientation */
-.slider-tab.active {
-  writing-mode: horizontal-tb;
-  flex-direction: column;
-  min-width: 600px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 40px;
-  background-color: #ffffff;
-}
-
-/* Title section in tab */
-.slider-title {
+.aquerone-main {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 1rem 0;
-}
-
-.project-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  font-family: 'Playfair Display', serif;
-  text-align: left;
-}
-
-.project-meta {
-  margin-top: auto;
-  display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 0.85rem;
+  padding: 60px 40px;
+  text-align: center;
 }
 
-.slider-title h3 {
-  color: black;
-  font-size: 2rem;
-  margin: 0;
+.aquerone-tags {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.aquerone-tags span {
+  background-color: #111;
+  color: white;
+  font-size: 0.7rem;
+  padding: 4px 10px;
+  border-radius: 3px;
   font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.aquerone-title {
+  font-family: 'UnifrakturCook', cursive;
+  font-size: 3rem;
+  margin: 10px 0;
+  color: #000;
   letter-spacing: 0.02em;
 }
 
-.slider-badge {
-  background-color: #c24e00;
-  color: white;
-  font-size: 0.6rem;
-  padding: 2px 6px;
-  margin-top: 5px;
-  display: inline-block;
-  border-radius: 3px;
-}
-
-.slider-year {
-  font-size: 0.75rem;
-  margin-top: 10px;
-  color: #555;
-}
-
-/* Expanded details panel */
-.slider-detail {
-  margin-top: 20px;
-}
-
-.slider-detail h2 {
-  font-family: 'Alfa Slab One', serif;
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: #222;
-}
-
-.slider-detail p {
-  width: 100vw;
-  font-size: 1rem;
-  line-height: 1.6;
+.aquerone-desc {
+  font-family: 'Georgia', serif;
+  font-size: 1.1rem;
   color: #444;
-  margin-top: 10px;
-  max-width: 1000px;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
 }
 
-.slider-img {
-  max-width: 100%;
-  margin-top: 20px;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-/* Tags display */
-.slider-tags {
+.aquerone-img-wrap {
+  margin-top: 30px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-bottom: 10px;
+  justify-content: center;
 }
 
-.slider-tags span {
-  background-color: #111;
-  color: #fff;
-  font-size: 0.65rem;
-  padding: 4px 8px;
-  border-radius: 3px;
-  text-transform: uppercase;
-  font-weight: bold;
+.aquerone-img-wrap img {
+  max-width: 90%;
+  height: auto;
+  border: 1px solid #b9b1a9;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-radius: 6px;
+  transition: transform 0.3s ease;
 }
 
+.aquerone-img-wrap img:hover {
+  transform: scale(1.03);
+}
 
+/* Featured Intro Card */
 .featured-card {
-  writing-mode: horizontal-tb;
   background-color: #e7dfd8;
   min-width: 600px;
   max-width: 700px;
@@ -178,7 +160,6 @@
   gap: 20px;
 }
 
-
 .featured-description {
   font-size: 1.4rem;
   line-height: 1.6;
@@ -186,6 +167,7 @@
   font-family: 'Georgia', serif;
   max-width: 520px;
   color: #111;
+  text-align: left;
 }
 
 .dropcap {
@@ -200,21 +182,40 @@
   line-height: 1;
 }
 
-
-.slider-detail {
-  position: relative;
-  overflow: hidden;
+/* Default collapsed tab style */
+.slider-tab.aquerone-style {
+  width: 100px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  cursor: pointer;
 }
 
-.slider-img {
-  width: 100%;
-  height: auto;
-  transition: transform 0.6s ease;
-  transform-origin: center center;
-  display: block;
-  border-radius: 8px;
+/* Show only the left spine content */
+.slider-tab.aquerone-style .spine-left {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 1rem;
+  text-align: center;
+  transform: rotate(0deg);
 }
 
-.slider-img:hover {
-  transform: scale(1.05); /* adjust as needed */
+/* Hide other content when collapsed */
+.slider-tab.aquerone-style .aquerone-main,
+.slider-tab.aquerone-style .spine-right {
+  display: none;
+}
+
+/* When active, expand full layout */
+.slider-tab.aquerone-style.active {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+
+/* Show center and right spine when active */
+.slider-tab.aquerone-style.active .aquerone-main,
+.slider-tab.aquerone-style.active .spine-right {
+  display: flex;
 }

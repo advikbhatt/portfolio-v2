@@ -7,10 +7,12 @@ export default function Hero() {
       <div className="hero-content">
         {/* Left Project Card */}
         <div className="hero-card">
-          <img src="/assets/project1.webp" alt="Project 1" className="hero-image" />
-          <h3 className="hero-title">AVRO | KO <span className="new-badge">NEW</span></h3>
+          <img src="/assets/git.png" alt="GitHub Projects" className="hero-image" />
+          <h3 className="hero-title">
+            GITHUB REPOS <span className="new-badge">NEW</span>
+          </h3>
           <p className="hero-desc">
-            AvroKO is an award-winning global lorem23design firm, established itself as a global leader in interior architecture for hospitality, restaurant and bars.
+            Dive into a curated collection of open-source projects and experiments showcasing my development journey across full-stack apps, data tools, and UI experiments.
           </p>
         </div>
 
@@ -19,18 +21,20 @@ export default function Hero() {
           <h2 className="hero-allwork">ALL WORK!</h2>
           <p className="hero-featured">
             A Featured selection<br />
-            the latest wlorem10 loremorloremjkashdflahslaskdfaskjdfhlask —<br />
-            of the lheast years. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, obcaecati?
+            of recent projects, experiments, and collaborations —<br />
+            from React frontends to data visualizations and creative dev builds.
           </p>
           <p className="hero-tip"><strong>TIP!</strong> Drag sideways to navigate</p>
         </div>
 
         {/* Right Project Card */}
         <div className="hero-card">
-          <img src="/assets/project2.jpeg" alt="Project 2" className="hero-image" />
-          <h3 className="hero-title">THE ROGER HUB <span className="new-badge">NEW</span></h3>
+          <img src="/assets/linkedin.png" alt="LinkedIn Portfolio" className="hero-image" />
+          <h3 className="hero-title">
+            LINKEDIN PROFILE <span className="new-badge">NEW</span>
+          </h3>
           <p className="hero-desc">
-            The Roger Hub is an immersive web experience showcasing the tennis-inspired 'On' sneakers, a collaboration born out of a partnership with the legendary Roger Federer.
+            Connect with me professionally — explore my experience, achievements, and education as a Data Science student and Web Developer actively building innovative solutions.
           </p>
         </div>
       </div>

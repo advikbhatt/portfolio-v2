@@ -137,3 +137,16 @@
 .image-frame:hover .gallery-img {
   transform: scale(1.1); /* zooms in */
 }
+
+.exp-card.hoverable {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.exp-card.hoverable:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9; /* optional hover background */
+}
