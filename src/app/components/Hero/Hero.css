@@ -1,0 +1,111 @@
+/* Base Section */
+.hero-section {
+    background-color: #e7dfd8;
+    padding: 60px 40px;
+    font-family: 'Georgia', serif;
+}
+
+/* Container for cards + center text */
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Project Card */
+.hero-card {
+    flex: 1;
+    max-width: 400px;
+}
+
+/* Image Style */
+.hero-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+/* Project Title */
+.hero-title {
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: 'Georgia', serif;
+    color: #222;
+    letter-spacing: 0.02em;
+}
+
+/* Description Text */
+.hero-desc {
+    font-size: 0.95rem;
+    color: #333;
+    margin-top: 14px;
+    line-height: 1.5;
+}
+
+/* "NEW" Badge */
+.new-badge {
+    background-color: #c24e00;
+    color: white;
+    font-size: 0.65rem;
+    padding: 2px 6px;
+    margin-left: 6px;
+    border-radius: 3px;
+    font-weight: bold;
+    vertical-align: middle;
+    display: inline-block;
+    transform: translateY(-1px);
+}
+
+/* Center Text Block */
+.hero-center {
+    text-align: center;
+    max-width: 400px;
+    padding: 0 30px;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+}
+
+.hero-allwork {
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 0.02em;
+}
+
+.hero-featured {
+    font-size: 1.1rem;
+    color: #222;
+    line-height: 1.5;
+}
+
+.hero-tip {
+    font-size: 0.8rem;
+    color: #555;
+    margin-top: 12px;
+}
+
+/* Bottom Banner (MIRANDA-style) */
+.miranda-banner {
+    background-color: #111;
+    padding: 80px 0;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.miranda-text {
+    font-size: clamp(3rem, 12vw, 10rem);
+  font-family: 'UnifrakturCook', cursive;
+    color: #e7dfd8;
+    margin: 0;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+}

@@ -1,0 +1,220 @@
+/* Entire section setup */
+.slider-section {
+  background-color: #e7dfd8;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  font-family: 'Georgia', serif;
+}
+
+/* Container for horizontal layout */
+.slider-container {
+  display: flex;
+  height: 100%;
+  width: max-content;
+  will-change: transform;
+}
+
+/* Each project tab */
+.slider-tab {
+  min-width: 220px;
+  flex-shrink: 0;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  background: #e7dfd8;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  cursor: pointer;
+  padding: 20px 10px;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.slider-tab:hover {
+  background-color: #ded6ce;
+}
+
+/* Active tab expands and switches orientation */
+.slider-tab.active {
+  writing-mode: horizontal-tb;
+  flex-direction: column;
+  min-width: 600px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+/* Title section in tab */
+.slider-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  text-align: left;
+}
+
+.project-meta {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.slider-title h3 {
+  color: black;
+  font-size: 2rem;
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+}
+
+.slider-badge {
+  background-color: #c24e00;
+  color: white;
+  font-size: 0.6rem;
+  padding: 2px 6px;
+  margin-top: 5px;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+.slider-year {
+  font-size: 0.75rem;
+  margin-top: 10px;
+  color: #555;
+}
+
+/* Expanded details panel */
+.slider-detail {
+  margin-top: 20px;
+}
+
+.slider-detail h2 {
+  font-family: 'Alfa Slab One', serif;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.slider-detail p {
+  width: 100vw;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-top: 10px;
+  max-width: 1000px;
+}
+
+.slider-img {
+  max-width: 100%;
+  margin-top: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Tags display */
+.slider-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.slider-tags span {
+  background-color: #111;
+  color: #fff;
+  font-size: 0.65rem;
+  padding: 4px 8px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+.featured-card {
+  writing-mode: horizontal-tb;
+  background-color: #e7dfd8;
+  min-width: 600px;
+  max-width: 700px;
+  padding: 60px 40px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-left: 1px solid #aaa;
+}
+
+.featured-labels {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.featured-heading {
+  font-family: 'UnifrakturCook', cursive;
+  background-color: #111;
+  color: #e7dfd8;
+  font-size: 4rem;
+  padding: 10px 20px;
+  display: inline-block;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+.featured-subblock {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+
+.featured-description {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-top: 40px;
+  font-family: 'Georgia', serif;
+  max-width: 520px;
+  color: #111;
+}
+
+.dropcap {
+  font-size: 3.2rem;
+  font-weight: bold;
+  float: left;
+  margin-right: 10px;
+  font-family: 'UnifrakturCook', cursive;
+  background-color: #111;
+  color: #e7dfd8;
+  padding: 0 10px;
+  line-height: 1;
+}
+
+
+.slider-detail {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.6s ease;
+  transform-origin: center center;
+  display: block;
+  border-radius: 8px;
+}
+
+.slider-img:hover {
+  transform: scale(1.05); /* adjust as needed */
+}

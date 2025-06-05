@@ -1,0 +1,37 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 30px;
+  background-color: #e7dfd8;
+  font-family: 'Georgia', serif;
+  border-bottom: 1px solid #aaa;
+}
+
+.navbar__location {
+  font-size: 0.9rem;
+  color: #222;
+}
+
+.navbar__logo {
+  font-family: 'UnifrakturCook', cursive;
+  font-size: 1.2rem;
+  color: #111;
+}
+
+.navbar__menu .menu-icon {
+  width: 20px;
+  height: 14px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  height: 2px;
+  background-color: #111;
+  width: 100%;
+  display: block;
+}

@@ -1,0 +1,139 @@
+
+/* Bottom Banner (MIRANDA-style) */
+.miranda-banner {
+    background-color: #111;
+    padding: 80px 0;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.miranda-text {
+    font-size: clamp(3rem, 12vw, 10rem);
+  font-family: 'UnifrakturCook', cursive;
+    color: #e7dfd8;
+    margin: 0;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+}
+
+.about-wrapper {
+  background: #e9e1d7;
+  padding: 1rem 2rem;
+  font-family: 'Georgia', serif;
+  color: #111;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.section-heading {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  letter-spacing: 0.1em;
+}
+
+.clients-block {
+  width: 100vw; 
+  background: #e9e1d7;
+  padding: 1rem 2rem;
+  margin: 4rem 0;
+}
+
+.clients-text {
+  font-size: 2rem;
+  line-height: 1.6;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Georgia', serif;
+}
+
+
+.highlight {
+  display: inline-block;
+  background: #111;
+  color: #e9e1d7;
+  padding: 0.2rem 0.5rem;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  margin: 0 0.25rem;
+  vertical-align: middle;
+}
+
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.exp-card {
+  border: 2px dashed #333;
+  padding: 2rem;
+  border-radius: 12px;
+  background: #f7f2ec;
+  font-size: 1.1rem;
+}
+
+.exp-card h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.exp-time {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.exp-card p {
+  line-height: 1.6;
+}
+
+.tags {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tags .highlight {
+  font-size: 1rem;
+  padding: 0.2rem 0.6rem;
+  letter-spacing: 0.02em;
+}
+ .image-grid-section {
+  background: #e9e1d7;
+  padding: 4rem 2rem;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.image-frame {
+  overflow: hidden;
+  aspect-ratio: 2.5 / 1.5; 
+  background: #fff;
+  border: 1px solid #bbb;
+  position: relative;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.image-frame:hover .gallery-img {
+  transform: scale(1.1); /* zooms in */
+}
