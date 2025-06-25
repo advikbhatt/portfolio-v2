@@ -47,7 +47,6 @@ const About = () => {
                             and performance optimization. Contributed to real-world scalable projects in a collaborative environment.
                         </p>
                         <div className="tags">
-                            <a href="https://github.com/advikbhatt?tab=repositories&q=full-stack" target="_blank" rel="noopener noreferrer" className="highlight">FULL-STACK</a>,
                             <a href="https://github.com/advikbhatt?tab=repositories&q=data+science" target="_blank" rel="noopener noreferrer" className="highlight">DATA SCIENCE</a>,
                             <a href="https://github.com/advikbhatt?tab=repositories&q=power+bi" target="_blank" rel="noopener noreferrer" className="highlight">POWER BI</a>,
                             <a href="https://www.behance.net/search/projects?search=ui%2Fux%20advik%20bhatt" target="_blank" rel="noopener noreferrer" className="highlight">UI/UX DESIGN</a>,

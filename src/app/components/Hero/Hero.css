@@ -1,7 +1,7 @@
 /* Base Section */
 .hero-section {
     background-color: #e7dfd8;
-    padding: 60px 40px;
+    padding: 30px 0px;
     font-family: 'Georgia', serif;
 }
 
@@ -65,8 +65,8 @@
 /* Center Text Block */
 .hero-center {
     text-align: center;
-    max-width: 400px;
-    padding: 0 30px;
+    max-width: 1400px;
+    padding: 0 15px;
     border-left: 1px solid #999;
     border-right: 1px solid #999;
 }
@@ -91,17 +91,21 @@
     margin-top: 12px;
 }
 
-/* Bottom Banner (MIRANDA-style) */
 .miranda-banner {
-    background-color: #111;
-    padding: 80px 0;
-    text-align: center;
-    margin-top: 80px;
+  max-width: 1800px; 
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7dfd8;
+  transform-origin: center top;
+  position: relative;
+  z-index: 1;
 }
 
-.miranda-text {
+.text {
     font-size: clamp(3rem, 12vw, 10rem);
-  font-family: 'UnifrakturCook', cursive;
+    font-family: 'Times New Roman', serif;
     color: #e7dfd8;
     margin: 0;
     line-height: 1;
