@@ -7,7 +7,7 @@ export default function Footer() {
 
       <div className="footer-cta">
         <p>
-          nothing together <span className="footer-email">EMAIL ME</span> Let's create something
+          nothing together<a> <span className="footer-email">EMAIL ME</span></a> Let's create something
         </p>
       </div>
 
@@ -19,13 +19,13 @@ export default function Footer() {
           <span className="footer-legal">2025</span>
         </div>
         <div className="footer-right">
-          <a href="#">TWITTER</a>
+          <a href="https://www.linkedin.com/in/advikbhatt/">LINKEDIN</a>
           <span>•</span>
-          <a href="#">INSTAGRAM</a>
+          <a href="https://www.instagram.com/advikbhatt_24/">INSTAGRAM</a>
           <span>•</span>
-          <a href="#">DRIBBBLE</a>
+          <a href="https://github.com/advikbhatt">GITHUB</a>
           <span>•</span>
-          <a href="#">BEHANCE</a>
+          <a href="https://leetcode.com/u/advik_bhatt/">LEETCODE</a>
         </div>
       </div>
     </footer>

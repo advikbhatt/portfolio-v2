@@ -137,7 +137,7 @@
 }
 
 .image-frame:hover .gallery-img {
-  transform: scale(1.1); /* zooms in */
+  transform: scale(1.1); 
 }
 
 .exp-card.hoverable {
@@ -151,4 +151,30 @@
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   background-color: #f9f9f9; /* optional hover background */
+}
+
+.experience-images {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.thumb-img {
+  width: 150px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+
+.thumb-img:hover {
+  transform: scale(1.05);
+}
+
+.links-row{
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-top: 10px ;
+ 
 }
