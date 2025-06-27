@@ -1,70 +1,85 @@
 'use client';
-import { useEffect, useRef } from "react";
-import "./Hero.css";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import './Hero.css';
+import { useEffect, useRef } from 'react';
+import { TbMail, TbBrandLinkedin, TbBrandGithub ,TbDownload} from 'react-icons/tb';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Hero() {
-  const bannerRef = useRef(null);
+  const imageRef = useRef(null);
+  const nameScrollRef = useRef(null);
 
   useEffect(() => {
-    gsap.fromTo(
-      bannerRef.current,
-      { scale: 1 },
-      {
-        scale: 0.1,
-        ease: "none",
-        scrollTrigger: {
-          trigger: bannerRef.current,
-          start: "top bottom",     
-          end: "top top",          
-          scrub: true,
-        },
-      }
-    );
+    // Parallax on image
+    gsap.to(imageRef.current, {
+      y: -100,
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '.hero-section',
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true,
+      },
+    });
+
+    // Reverse scrolling text
+    gsap.to(nameScrollRef.current, {
+      xPercent: 50,
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '.hero-section',
+        start: 'top bottom',
+        end: '+=800',
+        scrub: true,
+      },
+    });
   }, []);
 
   return (
     <section className="hero-section">
-      <div className="hero-content">
-        {/* Left Project Card */}
-        {/* <div className="hero-card">
-          <img src="/assets/git.png" alt="GitHub Projects" className="hero-image" />
-          <h3 className="hero-title">
-            GITHUB REPOS <span className="new-badge">NEW</span>
-          </h3>
-          <p className="hero-desc">
-            Dive into a curated collection of open-source projects and experiments showcasing my development journey across full-stack apps, data tools, and UI experiments.
-          </p>
-        </div> */}
-
-        {/* Center Feature Text */}
-     <div className="hero-center">
-        <h2 className="hero-allwork">ABOUT ME</h2>
-        <p className="hero-featured">
-          <br />
-          I'm a final-year B.Tech Computer Science student specializing in Data Science at UPES, Dehradun. Passionate about data-driven problem solving, I work across Python, machine learning, and full-stack web development to build impactful solutions.
-        </p>
-        <p className="hero-tip"><strong>RESUME!</strong> Download my resume </p>
+      {/* Background Image */}
+      <div className="hero-image-wrapper">
+        <img ref={imageRef} src="assets/hero.jpg" alt="Advik Bhatt" className="hero-image" />
       </div>
-        {/* Right Project Card */}
-        {/* <div className="hero-card">
-          <img src="/assets/linkedin.png" alt="LinkedIn Portfolio" className="hero-image" />
-          <h3 className="hero-title">
-            LINKEDIN PROFILE <span className="new-badge">NEW</span>
-          </h3>
-          <p className="hero-desc">
-            Connect with me professionally — explore my experience, achievements, and education as a Data Science student and Web Developer actively building innovative solutions.
-          </p>
-        </div> */}
-      </div>
- 
 
-      {/* Miranda Banner */}
-      <div className="miranda-banner" ref={bannerRef}>
-        <h1 className="text">Advik</h1>
+      {/* Navbar */}
+      <header className="hero-navbar">
+        <div className="hero-navbar-left">Dehradun, UK</div>
+        <nav className="hero-navbar-right">
+          <a href="mailto:advikbhatt24@gmail.com"><TbMail /></a>
+          <a href="https://www.linkedin.com/in/advikbhatt/"><TbBrandLinkedin /></a>
+          <a href="https://github.com/advikbhatt"><TbBrandGithub /></a>
+        </nav>
+      </header>
+
+
+
+      {/* Right-Aligned Text */}
+      <div className="hero-text">
+        <span className="hero-role">Freelancing and Development</span>
+        <h2 className="hero-job">Data Science Student</h2>
+              {/* Resume Badge */}
+      <div className="hero-location-badge">
+        <div className="hero-location-text">
+          <span>Download Resume</span>
+        </div>
+        <div className="hero-location-icon">
+          <TbDownload />
+        </div>
+      </div>
+      </div>
+
+      {/* Scrolling Name Text */}
+      <div className="hero-name-scroll">
+        <div className="scrolling-text" ref={nameScrollRef}>
+          <span>Advik Bhatt — </span>
+          <span>Advik Bhatt — </span>
+          <span>Advik Bhatt — </span>
+          <span>Advik Bhatt — </span>
+        </div>
       </div>
     </section>
   );

@@ -1,115 +1,170 @@
-/* Base Section */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap');
 .hero-section {
-    background-color: #e7dfd8;
-    padding: 30px 0px;
-    font-family: 'Georgia', serif;
-}
-
-/* Container for cards + center text */
-.hero-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 30px;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-/* Project Card */
-.hero-card {
-    flex: 1;
-    max-width: 400px;
-}
-
-/* Image Style */
-.hero-image {
-    width: 100%;
-    height: auto;
-    margin-bottom: 16px;
-    border-radius: 4px;
-    object-fit: cover;
-}
-
-/* Project Title */
-.hero-title {
-    font-weight: bold;
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-family: 'Georgia', serif;
-    color: #222;
-    letter-spacing: 0.02em;
-}
-
-/* Description Text */
-.hero-desc {
-    font-size: 0.95rem;
-    color: #333;
-    margin-top: 14px;
-    line-height: 1.5;
-}
-
-/* "NEW" Badge */
-.new-badge {
-    background-color: #c24e00;
-    color: white;
-    font-size: 0.65rem;
-    padding: 2px 6px;
-    margin-left: 6px;
-    border-radius: 3px;
-    font-weight: bold;
-    vertical-align: middle;
-    display: inline-block;
-    transform: translateY(-1px);
-}
-
-/* Center Text Block */
-.hero-center {
-    text-align: center;
-    max-width: 1400px;
-    padding: 0 15px;
-    border-left: 1px solid #999;
-    border-right: 1px solid #999;
-}
-
-.hero-allwork {
-    color: black;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    letter-spacing: 0.02em;
-}
-
-.hero-featured {
-    font-size: 1.1rem;
-    color: #222;
-    line-height: 1.5;
-}
-
-.hero-tip {
-    font-size: 0.8rem;
-    color: #555;
-    margin-top: 12px;
-}
-
-.miranda-banner {
-  max-width: 1800px; 
-  height: 30vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #e7dfd8;
-  transform-origin: center top;
   position: relative;
-  z-index: 1;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Playfair Display', serif;
+  background-color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.text {
-    font-size: clamp(3rem, 12vw, 10rem);
-    font-family: 'Times New Roman', serif;
-    color: #e7dfd8;
-    margin: 0;
-    line-height: 1;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    -webkit-font-smoothing: antialiased;
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  object-fit: cover;
+  object-position: center top;
+  z-index: 0;
+}
+
+/* NAVBAR INSIDE HERO */
+.hero-navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  z-index: 10;
+  font-size: 0.95rem;
+}
+
+.hero-navbar-left {
+  color: #111;
+  font-weight: 400;
+}
+
+.hero-navbar-right {
+  display: flex;
+  gap: 2rem;
+}
+
+.hero-navbar-right a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 400;
+  transition: color 0.2s ease;
+}
+
+.hero-navbar-right a:hover {
+  color: #c24e00;
+}
+
+/* LOCATION CENTERED */
+.hero-location-badge {
+    width: 13vw;
+  display: flex;
+  position: absolute;
+  top: 10vh;
+  left: 5vw;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border:solid 1px #7f7f7f;
+  color: #7f7f7f;
+  padding: 10px 14px;;
+  border-radius: 40px;
+  gap: 6px;
+  z-index: 10;
+}
+
+.hero-location-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.hero-location-icon {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #7f7f7f;
+}
+
+.hero-icon {
+  font-size: 1.3rem;
+}
+
+/* RIGHT ALIGN JOB */
+.hero-text {
+  position: absolute;
+  top: 32%;
+  right: 5vw;
+  color: #313131;
+  text-align: right;
+  z-index: 2;
+}
+
+.hero-role {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  
+}
+
+.hero-job {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* SCROLLING NAME */
+.hero-name-scroll {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.scrolling-text {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: clamp(4rem, 14vw, 10rem);
+  font-weight: bold;
+  color: #fff;
+  animation: scrollText 20s linear infinite;
+  letter-spacing: -2px;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+.navbar__socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar__socials a {
+  color: #111;
+  font-size: 1.1rem;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+.navbar__socials a:hover {
+  color: #7f7f7f; 
 }

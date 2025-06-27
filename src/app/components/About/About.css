@@ -1,5 +1,7 @@
 
 /* Bottom Banner (MIRANDA-style) */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap');
+
 .miranda-banner {
     background-color: #111;
     padding: 80px 0;
@@ -9,7 +11,7 @@
 
 .miranda-text {
     font-size: clamp(3rem, 12vw, 10rem);
-  font-family: 'UnifrakturCook', cursive;
+  font-family: 'Playfair Display', serif;
     color: #e7dfd8;
     margin: 0;
     line-height: 1;
@@ -21,7 +23,7 @@
 .about-wrapper {
   background: #e9e1d7;
   padding: 1rem 2rem;
-  font-family: 'Georgia', serif;
+  font-family: 'Playfair Display', serif;
   color: #111;
   max-width: 1800px;
   margin: 0 auto;
@@ -47,7 +49,7 @@
   line-height: 1.6;
   max-width: 1200px;
   margin: 0 auto;
-  font-family: 'Georgia', serif;
+  font-family: 'Playfair Display', serif;
 }
 
 
@@ -108,7 +110,7 @@
 }
  .image-grid-section {
   background: #e9e1d7;
-  padding: 4rem 2rem;
+  padding: 2rem 1rem;
 }
 
 .image-grid {

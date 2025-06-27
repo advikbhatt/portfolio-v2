@@ -4,16 +4,21 @@ import React from "react";
 import "./About.css";
 
 const images = [
-    "/assets/project1.webp",
-    "/assets/project2.jpeg",
+    "https://media.licdn.com/dms/image/v2/D5622AQHJJDznZ8n60w/feedshare-shrink_800/B56ZetFc84HQAk-/0/1750955582223?e=1753920000&v=beta&t=OsKmjfcucAmipyqBm9ALn1DCIAbYqieR8XsEtV4N5oM",
+    "https://media.licdn.com/dms/image/v2/D5622AQG8O96zJzmqaA/feedshare-shrink_1280/feedshare-shrink_1280/0/1729670780968?e=1753920000&v=beta&t=sAvKDab7gXoIykbwkY32p8bXmfiVRzNEkEMXrWc6F6w",
 ];
+const images2 = [
+    'https://media.licdn.com/dms/image/v2/D5622AQG1JCBSDahFig/feedshare-shrink_1280/feedshare-shrink_1280/0/1729670770513?e=1753920000&v=beta&t=ACuNbCQrypKNohZw46gUbfzGh_7yEseZ4BLp8ExfsIA',
+'https://media.licdn.com/dms/image/v2/D5622AQH0EmZr23qNOQ/feedshare-shrink_800/B56ZP46wwhG4Ag-/0/1735047993546?e=1753920000&v=beta&t=qmAadq8EBrFjIFbRTjqx-zby68scL_blWIBq7c1894k',
+'https://media.licdn.com/dms/image/v2/D4D22AQE8LSjgQluLuw/feedshare-shrink_2048_1536/B4DZcwz5ZWGgAo-/0/1748870601774?e=1753920000&v=beta&t=Ki348FGrrAG_TdtrI3Qsn-H6N2mF00kh7wHnDDiUShg',
 
+];
 const About = () => {
     return (
         <section className="about-wrapper">
             {/* Banner Heading */}
             <div className="miranda-banner">
-                <h1 className="miranda-text">ABOUT ME</h1>
+                <h1 className="miranda-text">EXPERIENCE</h1>
             </div>
 
             {/* Clients & Collaborations */}
@@ -29,7 +34,83 @@ const About = () => {
 
             {/* Experience Summary */}
             <div className="experience-grid">
+                <a
+  href="https://www.bhomya.org"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="exp-card hoverable"
+>
+  <h3>Technical Intern</h3>
+  <p className="exp-time">April 2025 – June 2025</p>
 
+  <div className="exp-card hoverable">
+    <h3>Bhomya Foundation (NGO)</h3>
+    <p className="exp-time">Dehradun, India</p>
+    <p>
+      Designed and developed the official website using React.js, incorporating dynamic content and smooth animations. Analyzed
+      participation and outreach data from events using Python to uncover engagement insights and inform volunteer planning.
+    </p>
+    <div className="tags">
+      <a
+        href="https://react.dev/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="highlight"
+      >REACT DEVELOPMENT</a>,
+      <a
+        href="https://www.coursera.org/articles/data-analysis"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="highlight"
+      >DATA ANALYSIS</a>,
+      <a
+        href="https://www.figma.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="highlight"
+      >WEB UI DESIGN</a>,
+      <a
+        href="https://pandas.pydata.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="highlight"
+      >PANDAS (PYTHON)</a>,
+      <a
+        href="/assets/Bhomya_Certificate.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="highlight"
+      >CERTIFICATE</a>
+    </div>
+  </div>
+</a>
+
+                <a
+                    href="https://www.mponline.gov.in/portal/services/forest/kuno.aspx" // Replace with Kuno project page if available
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="exp-card hoverable"
+                >
+                    <h3>Research Intern</h3>
+                    <p className="exp-time">Dec 2023 – Jan 2024</p>
+
+                    <div className="exp-card hoverable">
+                        <h3> Kuno National Park</h3>
+                        <p className="exp-time">Madhya Pradesh, India</p>
+                        <p>
+                            Contributed to wildlife conservation research by conducting field-level data collection and ecological
+                            monitoring in the Kuno National Park region. Learned practical skills in biodiversity surveying, data
+                            logging, and sustainable field methodologies.
+                        </p>
+                        <div className="tags">
+                            <a href="https://en.wikipedia.org/wiki/Biodiversity_monitoring" target="_blank" rel="noopener noreferrer" className="highlight">FIELD DATA COLLECTION</a>,
+                            <a href="https://www.gbif.org/data" target="_blank" rel="noopener noreferrer" className="highlight">ECOLOGICAL DATA</a>,
+                            <a href="https://earthobservatory.nasa.gov/features/RemoteSensing" target="_blank" rel="noopener noreferrer" className="highlight">REMOTE SENSING</a>,
+                            <a href="https://www.esri.com/en-us/what-is-gis/overview" target="_blank" rel="noopener noreferrer" className="highlight">GIS MAPPING</a>,
+                            <a href="/assets/Kuno_Certificate.pdf" target="_blank" rel="noopener noreferrer" className="highlight">CERTIFICATE</a>
+                        </div>
+                    </div>
+                </a>
                 <a
                     href="https://www.enigmatechsolutions.com/" // Replace with the exact page if available
                     target="_blank"
@@ -88,32 +169,7 @@ const About = () => {
                     </div>
                 </a>
 
-                <a
-                    href="https://www.mponline.gov.in/portal/services/forest/kuno.aspx" // Replace with Kuno project page if available
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="exp-card hoverable"
-                >
-                    <h3>Research Intern</h3>
-                    <p className="exp-time">Dec 2023 – Jan 2024</p>
 
-                    <div className="exp-card hoverable">
-                        <h3> Kuno National Park</h3>
-                        <p className="exp-time">Madhya Pradesh, India</p>
-                        <p>
-                            Contributed to wildlife conservation research by conducting field-level data collection and ecological
-                            monitoring in the Kuno National Park region. Learned practical skills in biodiversity surveying, data
-                            logging, and sustainable field methodologies.
-                        </p>
-                        <div className="tags">
-                            <a href="https://en.wikipedia.org/wiki/Biodiversity_monitoring" target="_blank" rel="noopener noreferrer" className="highlight">FIELD DATA COLLECTION</a>,
-                            <a href="https://www.gbif.org/data" target="_blank" rel="noopener noreferrer" className="highlight">ECOLOGICAL DATA</a>,
-                            <a href="https://earthobservatory.nasa.gov/features/RemoteSensing" target="_blank" rel="noopener noreferrer" className="highlight">REMOTE SENSING</a>,
-                            <a href="https://www.esri.com/en-us/what-is-gis/overview" target="_blank" rel="noopener noreferrer" className="highlight">GIS MAPPING</a>,
-                            <a href="/assets/Kuno_Certificate.pdf" target="_blank" rel="noopener noreferrer" className="highlight">CERTIFICATE</a>
-                        </div>
-                    </div>
-                </a>
 
 
 
@@ -123,6 +179,18 @@ const About = () => {
             <section className="image-grid-section">
                 <div className="image-grid">
                     {images.map((src, index) => (
+                        <div key={index} className="image-frame">
+                            <img
+                                src={src}
+                                alt={`Project Screenshot ${index + 1}`}
+                                className="gallery-img"
+                            />
+                        </div>
+                    ))}
+                </div>
+            </section>            <section className="image-grid-section">
+                <div className="image-grid">
+                    {images2.map((src, index) => (
                         <div key={index} className="image-frame">
                             <img
                                 src={src}

@@ -80,7 +80,7 @@ export default function Skills() {
     <section className="aboutskills-section">
       <div className="aboutskills-header">
         <h1 className="aboutskills-title">SKILLS</h1>
-        <img src="/assets/skill-logo.png" alt="portrait" className="aboutskills-image" />
+        {/* <img src="/assets/skill-logo.png" alt="portrait" className="aboutskills-image" /> */}
       </div>
       <hr className="aboutskills-divider" />
 

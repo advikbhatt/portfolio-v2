@@ -1,12 +1,13 @@
 /* Projects.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap');
 
 /* Main section layout */
 .slider-section {
-  background-color: #e7dfd8;
+  background-color: #c8c4c4;
   height: 100vh;
   overflow: hidden;
   position: relative;
-  font-family: 'Georgia', serif;
+  font-family: 'Playfair Display', serif;
 }
 
 .slider-container {
@@ -89,7 +90,7 @@
 }
 
 .aquerone-title {
-  font-family: 'UnifrakturCook', cursive;
+  font-family: 'Playfair Display', serif;
   font-size: 3rem;
   margin: 10px 0;
   color: #000;
@@ -97,7 +98,7 @@
 }
 
 .aquerone-desc {
-  font-family: 'Georgia', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 1.1rem;
   color: #444;
   max-width: 600px;
@@ -112,7 +113,7 @@
 }
 
 .aquerone-img-wrap img {
-  max-width: 90%;
+  max-width: 60%;
   height: auto;
   border: 1px solid #b9b1a9;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -144,7 +145,7 @@
 }
 
 .featured-heading {
-  font-family: 'UnifrakturCook', cursive;
+  font-family: 'Playfair Display', serif;
   background-color: #111;
   color: #e7dfd8;
   font-size: 4rem;
@@ -164,7 +165,7 @@
   font-size: 1.4rem;
   line-height: 1.6;
   margin-top: 40px;
-  font-family: 'Georgia', serif;
+  font-family: 'Playfair Display', serif;
   max-width: 520px;
   color: #111;
   text-align: left;
@@ -175,7 +176,7 @@
   font-weight: bold;
   float: left;
   margin-right: 10px;
-  font-family: 'UnifrakturCook', cursive;
+  font-family: 'Playfair Display', serif;
   background-color: #111;
   color: #e7dfd8;
   padding: 0 10px;
@@ -218,4 +219,18 @@
 .slider-tab.aquerone-style.active .aquerone-main,
 .slider-tab.aquerone-style.active .spine-right {
   display: flex;
+}
+
+.project-live-link {
+  margin-top: 1px;
+  display: inline-block;
+  font-size: 0.95rem;
+  color: #007aff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.project-live-link:hover {
+  color: #0044aa;
 }
