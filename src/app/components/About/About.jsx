@@ -172,7 +172,7 @@ const About = () => {
                         </div>
                     ))}
                 </div>
-            </section>            
+            </section>
             <section className="image-grid-section">
                 <div className="image-grid">
                     {images2.map((src, index) => (
