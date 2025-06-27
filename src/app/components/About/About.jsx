@@ -34,56 +34,27 @@ const About = () => {
 
             {/* Experience Summary */}
             <div className="experience-grid">
-                <a
+              <a
   href="https://www.bhomya.org"
   target="_blank"
   rel="noopener noreferrer"
   className="exp-card hoverable"
 >
-  <h3>Technical Intern</h3>
-  <p className="exp-time">April 2025 – June 2025</p>
+  <div>
+    <h3>Technical Intern</h3>
+    <p className="exp-time">April 2025 – June 2025</p>
 
-  <div className="exp-card hoverable">
-    <h3>Bhomya Foundation (NGO)</h3>
-    <p className="exp-time">Dehradun, India</p>
-    <p>
-      Designed and developed the official website using React.js, incorporating dynamic content and smooth animations. Analyzed
-      participation and outreach data from events using Python to uncover engagement insights and inform volunteer planning.
-    </p>
-    <div className="tags">
-      <a
-        href="https://react.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="highlight"
-      >REACT DEVELOPMENT</a>,
-      <a
-        href="https://www.coursera.org/articles/data-analysis"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="highlight"
-      >DATA ANALYSIS</a>,
-      <a
-        href="https://www.figma.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="highlight"
-      >WEB UI DESIGN</a>,
-      <a
-        href="https://pandas.pydata.org/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="highlight"
-      >PANDAS (PYTHON)</a>,
-      <a
-        href="/assets/Bhomya_Certificate.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="highlight"
-      >CERTIFICATE</a>
+    <div>
+      <h3>Bhomya Foundation (NGO)</h3>
+      <p className="exp-time">Dehradun, India</p>
+      <p>
+        Designed and developed the official website using React.js, incorporating dynamic content and smooth animations. Analyzed
+        participation and outreach data from events using Python to uncover engagement insights and inform volunteer planning.
+      </p>
     </div>
   </div>
 </a>
+
 
                 <a
                     href="https://www.mponline.gov.in/portal/services/forest/kuno.aspx" // Replace with Kuno project page if available
