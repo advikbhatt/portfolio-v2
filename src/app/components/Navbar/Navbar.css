@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap');
 
 .navbar {
-  height: 10vh;
+  height: 0vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 30px;
   background-color: #e7dfd8;
   font-family: 'Playfair Display', serif;
-  border-bottom: 1px solid #aaa;
+  /* border-bottom: 1px solid #aaa; */
+  
 }
+
 
 .navbar__location {
   font-size: 0.9rem;
