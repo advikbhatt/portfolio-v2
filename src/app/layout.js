@@ -1,6 +1,5 @@
 import "./globals.css";
-import Navbar from "./components/navbar/Navbar";
-import Head from "next/head";
+import Navbar from './components/Navbar/Navbar';
 
 export const metadata = {
   title: "Advik Bhatt | The Paper Portfolio",
