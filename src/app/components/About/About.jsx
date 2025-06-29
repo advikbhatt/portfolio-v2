@@ -16,8 +16,8 @@ const About = () => {
                 <p className="clients-text">
                     Over the past 2+ years, I’ve worked with impactful organizations like
                     <span className="highlight"> BHOMYA</span>,
-                    <span className="highlight"> INNODATA</span>,
-                    <span className="highlight"> CODSOFT</span>,
+                    <span className="highlight"> ENIGMA</span>,
+                    <span className="highlight"> WILDLIFE INSTITUTE INDIA</span>,
                     contributing to digital solutions, research, and social-tech development.
                 </p>
             </div>
@@ -75,7 +75,7 @@ const About = () => {
                     </div>
 
                     <div className="links-row">
-                        <a href="/assets/Enigma_Certificate.pdf" target="_blank" rel="noopener noreferrer" className="highlight-link">View Certificate ↗</a>
+                        <a href="https://www.linkedin.com/in/advikbhatt/details/certifications/1720236349921/single-media-viewer/?profileId=ACoAADchIr8BFaXSqrNcaStxboA7WnmnsvgNeNI" target="_blank" rel="noopener noreferrer" className="highlight-link">View Certificate ↗</a>
                         <a href="https://www.enigmatechsolutions.com/" target="_blank" rel="noopener noreferrer" className="highlight-link">Website ↗</a>
                     </div>
                 </div>
@@ -103,8 +103,8 @@ const About = () => {
                     </div>
 
                     <div className="links-row">
-                        <a href="/assets/Kuno_Certificate.pdf" target="_blank" rel="noopener noreferrer" className="highlight-link">View Certificate ↗</a>
-                        <a href="https://www.mponline.gov.in/portal/services/forest/kuno.aspx" target="_blank" rel="noopener noreferrer" className="highlight-link">Forest Portal ↗</a>
+                        <a href="https://www.linkedin.com/in/advikbhatt/" target="_blank" rel="noopener noreferrer" className="highlight-link">View Certificate ↗</a>
+                        <a href="https://wii.gov.in/" target="_blank" rel="noopener noreferrer" className="highlight-link">Forest Portal ↗</a>
                     </div>
                 </div>
 
@@ -130,7 +130,7 @@ const About = () => {
                     </div>
 
                     <div className="links-row">
-                        <a href="/assets/UHF_Certificate.pdf" target="_blank" rel="noopener noreferrer" className="highlight-link">View Certificate ↗</a>
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7091827728139661312/" target="_blank" rel="noopener noreferrer" className="highlight-link">View Certificate ↗</a>
                         <a href="https://www.instagram.com/unforgottenhumanity/" target="_blank" rel="noopener noreferrer" className="highlight-link">Instagram ↗</a>
                     </div>
                 </div>

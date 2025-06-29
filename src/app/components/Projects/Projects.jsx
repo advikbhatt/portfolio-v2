@@ -14,7 +14,7 @@ const projects = [
     isNew: true,
     description:
       'A collection of my projects showcasing my skills in data science, machine learning, and full-stack development. I have worked on various projects that involve data analysis, web development, and machine learning applications.',
-    image: '/assets/spotify.png',
+    image: '/assets/project.jpeg',
     tags: ['Computer Science', 'Projects'],
   },
   {
@@ -45,7 +45,7 @@ const projects = [
       'Built a responsive educational institute site with detailed course sections, contact forms, and multi-page navigation using HTML, CSS, JS.',
     image: '/assets/mhv.png',
     tags: ['HTML', 'CSS', 'JS', 'Responsive Web', 'Education'],
-    live: 'https://mhveducation.vercel.app/',
+    live: 'https://mhveducation.com/',
   },
   {
     title: 'SMS Spam Detection',
@@ -53,9 +53,9 @@ const projects = [
     isNew: true,
     description:
       'Built a machine learning model using Python and Streamlit to classify SMS messages as spam or ham, using NLP and scikit-learn.',
-    image: '/assets/project2.jpeg',
+    image: '/assets/sms.jpeg',
     tags: ['Machine Learning', 'Streamlit', 'NLP', 'scikit-learn'],
-    live: 'https://sms-spam.streamlit.app/',
+    // live: 'https://sms-spam.streamlit.app/',
   },
   {
     title: 'World Cup Prediction',
@@ -63,7 +63,7 @@ const projects = [
     isNew: true,
     description:
       'Predicted FIFA World Cup outcomes by scraping 20+ years of match data from Wikipedia using BeautifulSoup and analyzing goal patterns.',
-    image: '/assets/project2.jpeg',
+    image: '/assets/worldcup.jpeg',
     tags: ['Data Analysis', 'Web Scraping', 'Python', 'BeautifulSoup'],
     live: 'https://github.com/advikbhatt/World_cup_Predection',
   },
@@ -73,7 +73,7 @@ const projects = [
     isNew: true,
     description:
       'Implemented core DSA topics in C including stacks, queues, trees, sorting, and searching — solidifying algorithmic problem-solving skills.',
-    image: '/assets/project2.jpeg',
+    image: '/assets/dsa.jpeg',
     tags: ['C', 'DSA', 'Algorithms', 'Competitive Programming'],
     live: 'https://github.com/advikbhatt/Data-Structures-Algorithm',
   },
@@ -83,7 +83,7 @@ const projects = [
     isNew: true,
     description:
       'Created an AI desktop assistant using Python and OpenAI APIs for task automation and voice-based interactions.',
-    image: '/assets/project2.jpeg',
+    image: '/assets/ai.jpeg',
     tags: ['Python', 'OpenAI', 'Automation', 'Voice Assistant'],
     live: 'https://github.com/advikbhatt/Desktop-Assistant',
   },
@@ -103,7 +103,7 @@ const projects = [
     isNew: true,
     description:
       'Completed a 21-day Java coding challenge with daily problem-solving using OOP, arrays, recursion, and file handling.',
-    image: '/assets/project2.jpeg',
+    image: '/assets/code.png',
     tags: ['Java', 'DSA Practice', 'OOP', 'Challenges'],
     live: 'https://github.com/advikbhatt/21DaysofCode_Java',
   },
