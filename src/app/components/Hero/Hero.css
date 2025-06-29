@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
 
 .hero-section {
   position: relative;
@@ -135,6 +136,8 @@
 }
 
 .scrolling-text {
+  font-family: "Vina Sans", sans-serif;
+
   display: inline-block;
   white-space: nowrap;
   font-size: clamp(4rem, 14vw, 10rem);
