@@ -276,3 +276,114 @@
     text-transform: uppercase;
   }
 }
+
+/* Responsive for Tablets and Mobiles */
+@media (max-width: 768px) {
+  .slider-tab.aquerone-style {
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slider-tab.aquerone-style.active {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  .spine-left,
+  .spine-right {
+    writing-mode: horizontal-tb;
+    width: auto;
+    padding: 10px 20px;
+    border: none;
+    font-size: 0.9rem;
+  }
+
+  .aquerone-main {
+    padding: 20px;
+  }
+
+  .aquerone-title {
+    font-size: 2rem;
+  }
+
+  .aquerone-desc {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .aquerone-img-wrap img {
+    max-width: 90%;
+  }
+
+  .aquerone-tags {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .aquerone-tags span {
+    font-size: 0.6rem;
+    padding: 3px 8px;
+  }
+
+  .featured-card {
+    min-width: auto;
+    width: 100vw;
+    padding: 30px 20px;
+  }
+
+  .featured-heading {
+    font-size: 2.5rem;
+    padding: 8px 16px;
+  }
+
+  .featured-description {
+    font-size: 1.1rem;
+    margin-top: 20px;
+  }
+
+  .dropcap {
+    font-size: 2.5rem;
+    margin-right: 8px;
+    padding: 0 8px;
+  }
+}
+
+/* Even More Compact for Small Phones */
+@media (max-width: 480px) {
+  .aquerone-title {
+    font-size: 1.7rem;
+  }
+
+  .aquerone-desc {
+    font-size: 0.95rem;
+  }
+
+  .featured-heading {
+    font-size: 2rem;
+  }
+
+  .featured-description {
+    font-size: 1rem;
+  }
+
+  .aquerone-tags span {
+    font-size: 0.5rem;
+    padding: 2px 6px;
+  }
+
+  .spine-left,
+  .spine-right {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
+
+  .aquerone-img-wrap img {
+    max-width: 95%;
+  }
+  .slider-tab.aquerone-style .spine-left {
+    writing-mode: horizontal-tb;}
+}
