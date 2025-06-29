@@ -1,4 +1,4 @@
-
+/* Image Grid Layout */
 .image-grid-section {
   background: #e9e1d7;
   padding: 2rem 1rem;
@@ -13,6 +13,7 @@
 }
 
 .image-frame {
+    cursor: none;
   overflow: hidden;
   aspect-ratio: 2.5 / 1.5;
   background: #fff;
@@ -29,4 +30,46 @@
 
 .image-frame:hover .gallery-img {
   transform: scale(1.1);
+}
+
+/* Hover Circle */
+.hover-circle {
+  position: absolute;
+  pointer-events: none;
+  width: 120px;
+  height: 120px;
+  background-color: rgba(210, 210, 210, 0.75);
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  opacity: 0;
+  animation: fadeIn 0.3s forwards, scaleIn 0.4s forwards;
+  z-index: 10;
+}
+
+.hover-circle span {
+  text-align: center;
+  line-height: 1.2;
+  padding: 0.5rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: translate(-50%, -50%) scale(0.4);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
