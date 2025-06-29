@@ -180,7 +180,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 5px 10px;
+    padding: 20px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -199,29 +199,33 @@
     color: #111;
     font-weight: 400;
     writing-mode: sideways-lr;
-  }.hero-image {
+  }
+
+  .hero-image {
     position: absolute;
     top: 0;
     left: 0;
     width: 130%;
-    height: 100%;
+    height: 120%;
     object-fit: cover;
     object-position: center top;
     z-index: 0;
-  }.hero-location-text {
-    display: flex
-;
+  }
+
+  .hero-location-text {
+    display: flex;
     flex-direction: column;
     font-size: 0.4rem;
     font-weight: 500;
     line-height: 1.3;
-}.hero-location-badge {
+  }
+
+  .hero-location-badge {
     font-size: 0.6rem;
     width: 40vw;
-    display: flex
-;
+    display: flex;
     position: absolute;
-    top: 10vh;
+    top: 5vh;
     left: 5vw;
     align-items: center;
     justify-content: center;
@@ -232,11 +236,13 @@
     border-radius: 40px;
     gap: 1px;
     gap: 5px;
-}
-.hero-role {
+  }
+
+  .hero-role {
     font-size: 0.8rem;
     opacity: 0.9;
-}
+  }
+
   .hero-job {
     font-size: 1.2rem;
     font-weight: 600;
@@ -261,15 +267,25 @@
   }
 
   .scrolling-text {
-    
+
     display: inline-block;
     white-space: nowrap;
-    font-size: clamp(2rem, 6vw, 4rem);
+    font-size: clamp(15rem,6vw,4rem);
     font-weight: bold;
     color: #fff;
     animation: scrollText 20s linear infinite;
     letter-spacing: -1px;
   }
-   
+  .featured-heading {
+    font-size:3rem;
+  }
 
+  .featured-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 40px;
+    max-width: 380px;
+    color: #111;
+    text-align: left;
+  }
 }
