@@ -84,7 +84,7 @@ export default function Hero() {
     <section className="hero-section">
       {/* Background Image */}
       <div className="hero-image-wrapper">
-        <img ref={imageRef} src="assets/DSC08926.ARW" alt="Advik Bhatt" className="hero-image" />
+        <img ref={imageRef} src="assets/hero.png" alt="Advik Bhatt" className="hero-image" />
       </div>
 
       {/* Navbar */}
