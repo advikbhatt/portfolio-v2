@@ -276,16 +276,5 @@
     animation: scrollText 20s linear infinite;
     letter-spacing: -1px;
   }
-  .featured-heading {
-    font-size:3rem;
-  }
 
-  .featured-description {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-top: 40px;
-    max-width: 380px;
-    color: #111;
-    text-align: left;
-  }
 }

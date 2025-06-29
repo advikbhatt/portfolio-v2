@@ -116,7 +116,7 @@
   max-width: 60%;
   height: auto;
   border: 1px solid #b9b1a9;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   border-radius: 6px;
   transition: transform 0.3s ease;
 }
@@ -233,4 +233,46 @@
 
 .project-live-link:hover {
   color: #0044aa;
+}
+
+@media (max-width: 768px) {
+  .feature-card {
+    min-width: 450px;
+  }
+
+  .featured-heading {
+    font-size: 3rem;
+  }
+
+  .featured-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-top: 40px;
+    max-width: 330px;
+    color: #111;
+    text-align: left;
+  }
+
+  .aquerone-main {
+    padding: 60px 20px;
+  }
+
+  .aquerone-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin: 10px 0;
+    color: #000;
+    letter-spacing: 0.02em;
+  }
+
+  .aquerone-tags span {
+    background-color: #111;
+    color: white;
+    font-size: 0.3rem;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
 }

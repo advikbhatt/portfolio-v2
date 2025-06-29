@@ -1,23 +1,22 @@
-
 /* Bottom Banner (MIRANDA-style) */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap');
 
 .miranda-banner {
-    background-color: #111;
-    padding: 80px 0;
-    text-align: center;
-    margin-top: 80px;
+  background-color: #111;
+  padding: 80px 0;
+  text-align: center;
+  margin-top: 80px;
 }
 
 .miranda-text {
-    font-size: clamp(3rem, 12vw, 10rem);
+  font-size: clamp(3rem, 12vw, 10rem);
   font-family: 'Playfair Display', serif;
-    color: #e7dfd8;
-    margin: 0;
-    line-height: 1;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    -webkit-font-smoothing: antialiased;
+  color: #e7dfd8;
+  margin: 0;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
 }
 
 .about-wrapper {
@@ -38,7 +37,7 @@
 }
 
 .clients-block {
-  width: 100vw; 
+  width: 100vw;
   background: #e9e1d7;
   padding: 1rem 2rem;
   margin: 4rem 0;
@@ -108,7 +107,8 @@
   padding: 0.2rem 0.6rem;
   letter-spacing: 0.02em;
 }
- .image-grid-section {
+
+.image-grid-section {
   background: #e9e1d7;
   padding: 2rem 1rem;
 }
@@ -123,7 +123,7 @@
 
 .image-frame {
   overflow: hidden;
-  aspect-ratio: 2.5 / 1.5; 
+  aspect-ratio: 2.5 / 1.5;
   background: #fff;
   border: 1px solid #bbb;
   position: relative;
@@ -137,7 +137,7 @@
 }
 
 .image-frame:hover .gallery-img {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .exp-card.hoverable {
@@ -150,7 +150,8 @@
 .exp-card.hoverable:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  background-color: #f9f9f9; /* optional hover background */
+  background-color: #f9f9f9;
+  /* optional hover background */
 }
 
 .experience-images {
@@ -171,10 +172,47 @@
   transform: scale(1.05);
 }
 
-.links-row{
+.links-row {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
-  padding-top: 10px ;
- 
+  padding-top: 10px;
+
+}
+
+@media (max-width: 768px) {
+  .miranda-banner {
+    background-color: #111;
+    padding: 38px 0;
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  .about-wrapper {
+    background: #e9e1d7;
+    padding: 0.3rem 0.5rem;
+    font-family: 'Playfair Display', serif;
+    color: #111;
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+
+  .clients-block {
+    width: 100vw;
+    background: #e9e1d7;
+    padding: 1rem 1rem;
+    margin: 1rem 0;
+  }
+
+  .clients-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
 }
