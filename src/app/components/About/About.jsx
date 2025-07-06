@@ -47,7 +47,7 @@ const About = () => {
                     </div>
 
                     <div className="links-row">
-                        <a href="/assets/Bhomya_Certificate.pdf" target="_blank" rel="noopener noreferrer" className="highlight-link">View Certificate ↗</a>
+                        <a href="https://media.licdn.com/dms/image/v2/D5622AQG7UG-dGZVcvw/feedshare-shrink_2048_1536/B56Ze8fgdyH8Ao-/0/1751214067473?e=1754524800&v=beta&t=xtW4COgqGb_0TjyjExtwWrEpLy3pprlSKZYbFLgv_0w" target="_blank" rel="noopener noreferrer" className="highlight-link">View Certificate ↗</a>
                         <a href="https://www.bhomya.org" target="_blank" rel="noopener noreferrer" className="highlight-link">Website ↗</a>
                     </div>
                 </div>
@@ -103,8 +103,8 @@ const About = () => {
                     </div>
 
                     <div className="links-row">
-                        <a href="https://www.linkedin.com/in/advikbhatt/" target="_blank" rel="noopener noreferrer" className="highlight-link">View Certificate ↗</a>
-                        <a href="https://wii.gov.in/" target="_blank" rel="noopener noreferrer" className="highlight-link">Forest Portal ↗</a>
+                        <a href="https://www.linkedin.com/in/advikbhatt/overlay/1748096422058/single-media-viewer/?profileId=ACoAADchIr8BFaXSqrNcaStxboA7WnmnsvgNeNI" target="_blank" rel="noopener noreferrer" className="highlight-link">View Certificate ↗</a>
+                        <a href="https://wii.gov.in/" target="_blank" rel="noopener noreferrer" className="highlight-link">WII ↗</a>
                     </div>
                 </div>
 
@@ -131,7 +131,7 @@ const About = () => {
 
                     <div className="links-row">
                         <a href="https://www.linkedin.com/feed/update/urn:li:activity:7091827728139661312/" target="_blank" rel="noopener noreferrer" className="highlight-link">View Certificate ↗</a>
-                        <a href="https://www.instagram.com/unforgottenhumanity/" target="_blank" rel="noopener noreferrer" className="highlight-link">Instagram ↗</a>
+                        <a href="https://www.instagram.com/u_h_foundation/" target="_blank" rel="noopener noreferrer" className="highlight-link">Instagram ↗</a>
                     </div>
                 </div>
 

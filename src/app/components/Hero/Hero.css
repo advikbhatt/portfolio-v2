@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap'); */
 
 .hero-section {
   position: relative;
@@ -136,11 +136,10 @@
 }
 
 .scrolling-text {
-  font-family: "Vina Sans", sans-serif;
-
+  font-family: "Playfair Display", serif;
   display: inline-block;
   white-space: nowrap;
-  font-size: clamp(4rem, 14vw, 10rem);
+  font-size: clamp(7rem, 24vw, 13rem);
   font-weight: bold;
   color: #fff;
   animation: scrollText 20s linear infinite;
