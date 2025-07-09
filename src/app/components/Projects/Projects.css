@@ -301,6 +301,22 @@
 /* Responsive for Tablets and Mobiles */
 @media (max-width: 768px) {
   .slider-tab.aquerone-style {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100vw !important;
+    height: auto !important;
+    min-height: 100vh !important;
+    padding: 20px !important;
+  }
+
+  .slider-tab.aquerone-style .aquerone-main,
+  .slider-tab.aquerone-style .spine-right {
+    display: flex !important;
+  }
+
+  .slider-tab.aquerone-style .spine-left {
+    writing-mode: horizontal-tb !important;
+  }.slider-tab.aquerone-style {
     width: 100vw;
     flex-direction: column;
     justify-content: center;
