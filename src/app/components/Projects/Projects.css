@@ -37,7 +37,9 @@
   align-items: stretch;
   justify-content: space-between;
 }
-
+.slider-tab.aquerone-style:not(.active):hover::before {
+  will-change: opacity, transform;
+}
 .spine-left,
 .spine-right {
   writing-mode: vertical-rl;
@@ -53,7 +55,6 @@
   border-right: 1px solid var(--foreground);
   color: var(--foreground);
   width: 100px;
-  background-color: var(--panel-bg);
 }
 
 .spine-left span,
@@ -407,4 +408,40 @@
   .slider-tab.aquerone-style .spine-left {
     writing-mode: horizontal-tb;
   }
+}
+
+/* Hover effect for non-active cards */
+.slider-tab.aquerone-style:not(.active) {
+  position: relative;
+  transition: color 0.4s ease;
+  color: var(--foreground);
+  overflow: hidden;
+}
+
+/* Smooth background image fade-in on hover */
+.slider-tab.aquerone-style:not(.active):hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 0;
+}
+
+/* Text turns black on hover */
+.slider-tab.aquerone-style:not(.active):hover {
+  color: #000;
+}
+
+/* Ensure content stays on top of background image */
+.slider-tab.aquerone-style .spine-left,
+.slider-tab.aquerone-style .aquerone-main {
+  position: relative;
+  z-index: 1;
 }

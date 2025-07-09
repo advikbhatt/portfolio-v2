@@ -15,6 +15,7 @@ const projects = [
     description:
       'A collection of my projects showcasing my skills in data science, machine learning, and full-stack development. I have worked on various projects that involve data analysis, web development, and machine learning applications.',
     image: '/assets/project.jpeg',
+    hoverImage: 'https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg',
     tags: ['Computer Science', 'Projects'],
   },
   {
@@ -24,6 +25,7 @@ const projects = [
     description:
       'A Streamlit-based data explorer that supports CSV/XLSX uploads, interactive visualizations, ML model integration, and a chatbot for smart analytics.',
     image: '/assets/datawiz.png',
+    hoverImage: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg',
     tags: ['Python', 'Pandas', 'Streamlit', 'ML', 'Chatbot'],
     live: 'https://datawiz.streamlit.app/',
   },
@@ -34,6 +36,7 @@ const projects = [
     description:
       'Developed the official NGO website using React with custom animations, donation integration, team and gallery pages for social outreach.',
     image: '/assets/bhomya.png',
+    hoverImage: 'https://images.pexels.com/photos/3184435/pexels-photo-3184435.jpeg',
     tags: ['React.js', 'CSS Animations', 'NGO Website', 'Frontend'],
     live: 'https://bhomya.org',
   },
@@ -44,6 +47,7 @@ const projects = [
     description:
       'Built a responsive educational institute site with detailed course sections, contact forms, and multi-page navigation using HTML, CSS, JS.',
     image: '/assets/mhv.png',
+    hoverImage: 'https://images.pexels.com/photos/4145197/pexels-photo-4145197.jpeg',
     tags: ['HTML', 'CSS', 'JS', 'Responsive Web', 'Education'],
     live: 'https://mhveducation.com/',
   },
@@ -54,8 +58,8 @@ const projects = [
     description:
       'Built a machine learning model using Python and Streamlit to classify SMS messages as spam or ham, using NLP and scikit-learn.',
     image: '/assets/sms.jpeg',
+    hoverImage: 'https://images.pexels.com/photos/6476589/pexels-photo-6476589.jpeg',
     tags: ['Machine Learning', 'Streamlit', 'NLP', 'scikit-learn'],
-    // live: 'https://sms-spam.streamlit.app/',
   },
   {
     title: 'World Cup Prediction',
@@ -64,6 +68,7 @@ const projects = [
     description:
       'Predicted FIFA World Cup outcomes by scraping 20+ years of match data from Wikipedia using BeautifulSoup and analyzing goal patterns.',
     image: '/assets/worldcup.jpeg',
+    hoverImage: 'https://images.pexels.com/photos/2299544/pexels-photo-2299544.jpeg',
     tags: ['Data Analysis', 'Web Scraping', 'Python', 'BeautifulSoup'],
     live: 'https://github.com/advikbhatt/World_cup_Predection',
   },
@@ -74,6 +79,7 @@ const projects = [
     description:
       'Implemented core DSA topics in C including stacks, queues, trees, sorting, and searching — solidifying algorithmic problem-solving skills.',
     image: '/assets/dsa.jpeg',
+    hoverImage: 'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg',
     tags: ['C', 'DSA', 'Algorithms', 'Competitive Programming'],
     live: 'https://github.com/advikbhatt/Data-Structures-Algorithm',
   },
@@ -84,6 +90,7 @@ const projects = [
     description:
       'Created an AI desktop assistant using Python and OpenAI APIs for task automation and voice-based interactions.',
     image: '/assets/ai.jpeg',
+    hoverImage: 'https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg',
     tags: ['Python', 'OpenAI', 'Automation', 'Voice Assistant'],
     live: 'https://github.com/advikbhatt/Desktop-Assistant',
   },
@@ -94,6 +101,7 @@ const projects = [
     description:
       'Built an authentication system using Node.js and MongoDB featuring password hashing, form validation, and session management.',
     image: '/assets/project2.jpeg',
+    hoverImage: 'https://images.pexels.com/photos/1181316/pexels-photo-1181316.jpeg',
     tags: ['Node.js', 'MongoDB', 'Authentication', 'Backend'],
     live: 'https://github.com/advikbhatt/login_register_page',
   },
@@ -104,12 +112,22 @@ const projects = [
     description:
       'Completed a 21-day Java coding challenge with daily problem-solving using OOP, arrays, recursion, and file handling.',
     image: '/assets/code.png',
+    hoverImage: 'https://images.pexels.com/photos/574073/pexels-photo-574073.jpeg',
     tags: ['Java', 'DSA Practice', 'OOP', 'Challenges'],
     live: 'https://github.com/advikbhatt/21DaysofCode_Java',
   },
 ];
 
+
 export default function HorizontalSlider() {
+  useEffect(() => {
+  projects.forEach((project) => {
+    if (project.hoverImage) {
+      const img = new Image();
+      img.src = project.hoverImage;
+    }
+  });
+}, []);
   const sectionRef = useRef(null);
   const containerRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -190,6 +208,11 @@ export default function HorizontalSlider() {
             className={`slider-tab aquerone-style ${activeIndex === index ? 'active' : ''}`}
             onClick={() => setActiveIndex(index)}
             ref={(el) => (cardsRef.current[index] = el)}
+            style={
+              activeIndex !== index && project.hoverImage
+                ? { '--bg-image': `url(${project.hoverImage})` }
+                : {}
+            }
           >
             {/* Left Spine */}
             <div className="spine-left">
