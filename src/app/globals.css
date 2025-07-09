@@ -20,6 +20,16 @@
 
 }
 
+#smooth-wrapper {
+  overflow: hidden;
+}
+
+#smooth-content {
+  will-change: transform, opacity;
+  transform-style: preserve-3d;
+}
+
+
 html,
 body {
   max-width: 100vw;
@@ -29,6 +39,9 @@ body {
   scroll-behavior: smooth; /* re-apply in case browser skips root */
   scroll-padding-top: 4rem; /* optional: space for sticky headers */
   -webkit-overflow-scrolling: touch; /* smooth on iOS */
+    overscroll-behavior: none;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {

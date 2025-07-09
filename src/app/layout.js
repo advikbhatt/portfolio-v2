@@ -1,5 +1,5 @@
-// src/app/layout.js
 import './globals.css';
+import SmoothWrapper from './components/SmoothWrapper'; 
 
 export const metadata = {
   title: 'Advik Bhatt | The Portfolio',
@@ -13,7 +13,9 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.png" />
       </head>
       <body suppressHydrationWarning={true}>
-        {children}
+        <SmoothWrapper>
+          {children}
+        </SmoothWrapper>
       </body>
     </html>
   );

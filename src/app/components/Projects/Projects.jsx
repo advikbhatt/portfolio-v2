@@ -113,11 +113,13 @@ export default function HorizontalSlider() {
   const sectionRef = useRef(null);
   const containerRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
+  const cardsRef = useRef([]);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      const totalWidth = containerRef.current.scrollWidth || 3000;
+      const totalWidth = containerRef.current.scrollWidth;
 
+      // Horizontal Scroll
       gsap.to(containerRef.current, {
         x: () => -(totalWidth - window.innerWidth),
         ease: 'none',
@@ -125,11 +127,37 @@ export default function HorizontalSlider() {
           trigger: sectionRef.current,
           start: 'top top',
           end: () => `+=${totalWidth}`,
-          scrub: true,
+          scrub: 1,
           pin: true,
           anticipatePin: 1,
           invalidateOnRefresh: true,
         },
+      });
+
+      // Featured card fade-in
+      gsap.from('.featured-card', {
+        opacity: 0,
+        y: 60,
+        duration: 1.2,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: '.featured-card',
+          start: 'top 90%',
+        },
+      });
+
+      // Project cards animation
+      cardsRef.current.forEach((card, index) => {
+        gsap.from(card, {
+          opacity: 0,
+          y: 60,
+          duration: 1,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: card,
+            start: 'top 95%',
+          },
+        });
       });
     }, sectionRef);
 
@@ -146,7 +174,6 @@ export default function HorizontalSlider() {
               <h1 className="featured-heading">ABOUT ME</h1>
             </div>
           </div>
-
           <p className="featured-description">
             <span className="dropcap">A</span> Computer Science student at University of Petroleum and Energy Studies (2022–2026),<br />
             I blend data science, machine learning, full-stack development, and strong foundations in data structures & algorithms to create meaningful, tech-forward solutions — from analytical dashboards to intuitive web platforms, always driven by precision and purpose.
@@ -162,6 +189,7 @@ export default function HorizontalSlider() {
             key={index}
             className={`slider-tab aquerone-style ${activeIndex === index ? 'active' : ''}`}
             onClick={() => setActiveIndex(index)}
+            ref={(el) => (cardsRef.current[index] = el)}
           >
             {/* Left Spine */}
             <div className="spine-left">
@@ -180,7 +208,6 @@ export default function HorizontalSlider() {
               <h1 className="aquerone-title">{project.title}</h1>
               <p className="aquerone-desc">{project.description}</p>
 
-              {/* Live Link */}
               {project.live && (
                 <a
                   href={project.live}
