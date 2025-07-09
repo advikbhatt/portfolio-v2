@@ -1,5 +1,5 @@
 .aboutskills-section {
-  background-color: #e7dfd8;
+  background-color: var(--panel-bg);
   padding: 1rem 3rem;
   font-family: 'Georgia', serif;
 }
@@ -13,7 +13,7 @@
 .aboutskills-title {
   font-family: 'Alfa Slab One', serif;
   font-size: 7vw;
-  color: #111;
+  color: var(--foreground);
   margin: 0;
 }
 
@@ -25,7 +25,7 @@
 
 .aboutskills-divider {
   border: none;
-  border-top: 1px solid #999;
+  border-top: 1px solid var(--accent-alt);
   margin: 30px 0;
 }
 
@@ -44,7 +44,7 @@
 .aboutskills-number {
   font-size: 3rem;
   font-family: 'Georgia', serif;
-  color: #111;
+  color: var(--foreground);
 }
 
 .aboutskills-info {
@@ -53,7 +53,7 @@
 
 .aboutskills-meta {
   font-size: 0.9rem;
-  color: #444;
+  color: #777;
   margin: 0 0 10px;
 }
 
@@ -63,7 +63,7 @@
 
 .aboutskills-entry {
   font-size: 1.8rem;
-  color: #111;
+  color: var(--foreground);
   font-family: 'Georgia', serif;
   margin: 0;
 }

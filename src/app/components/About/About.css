@@ -1,8 +1,7 @@
-/* Bottom Banner (MIRANDA-style) */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap');
 
 .miranda-banner {
-  background-color: #111;
+  background-color: var(--foreground);
   padding: 80px 0;
   text-align: center;
   margin-top: 80px;
@@ -11,7 +10,7 @@
 .miranda-text {
   font-size: clamp(3rem, 12vw, 10rem);
   font-family: 'Playfair Display', serif;
-  color: #e7dfd8;
+  color: var(--panel-bg);
   margin: 0;
   line-height: 1;
   letter-spacing: 0.05em;
@@ -20,10 +19,10 @@
 }
 
 .about-wrapper {
-  background: #e9e1d7;
+  background: var(--panel-bg);
   padding: 1rem 2rem;
   font-family: 'Playfair Display', serif;
-  color: #111;
+  color: var(--foreground);
   max-width: 1800px;
   margin: 0 auto;
 }
@@ -38,7 +37,7 @@
 
 .clients-block {
   width: 100vw;
-  background: #e9e1d7;
+  background: var(--panel-bg);
   padding: 1rem 2rem;
   margin: 4rem 0;
 }
@@ -51,18 +50,16 @@
   font-family: 'Playfair Display', serif;
 }
 
-
 .highlight {
   display: inline-block;
-  background: #111;
-  color: #e9e1d7;
+  background: var(--foreground);
+  color: var(--panel-bg);
   padding: 0.2rem 0.5rem;
   font-weight: bold;
   font-family: 'Playfair Display', serif;
   margin: 0 0.25rem;
   vertical-align: middle;
 }
-
 
 .experience-grid {
   display: grid;
@@ -72,11 +69,12 @@
 }
 
 .exp-card {
-  border: 2px dashed #333;
+  border: 2px dashed var(--accent, #333);
   padding: 2rem;
   border-radius: 12px;
-  background: #f7f2ec;
+  background: var(--card-bg, #393939);
   font-size: 1.1rem;
+  color: var(--foreground);
 }
 
 .exp-card h3 {
@@ -87,7 +85,7 @@
 
 .exp-time {
   font-size: 0.9rem;
-  color: #555;
+  color: #777;
   margin-bottom: 1rem;
 }
 
@@ -108,7 +106,6 @@
   letter-spacing: 0.02em;
 }
 
-
 .exp-card.hoverable {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
@@ -119,8 +116,7 @@
 .exp-card.hoverable:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  background-color: #f9f9f9;
-  /* optional hover background */
+  background-color: var(--hover-bg, #f9f9f9);
 }
 
 .experience-images {
@@ -146,29 +142,29 @@
   gap: 1rem;
   margin-top: 1rem;
   padding-top: 10px;
-
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
   .miranda-banner {
-    background-color: #111;
+    background-color: var(--foreground);
     padding: 38px 0;
     text-align: center;
     margin-top: 70px;
   }
 
   .about-wrapper {
-    background: #e9e1d7;
+    background: var(--panel-bg);
     padding: 0.3rem 0.5rem;
     font-family: 'Playfair Display', serif;
-    color: #111;
+    color: var(--foreground);
     max-width: 1800px;
     margin: 0 auto;
   }
 
   .clients-block {
     width: 100vw;
-    background: #e9e1d7;
+    background: var(--panel-bg);
     padding: 1rem 1rem;
     margin: 1rem 0;
   }

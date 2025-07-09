@@ -1,13 +1,33 @@
+/* Theme Variables */
+:root {
+  --background: #ffffff;
+  --foreground: #2C2C2C;
+  --panel-bg: #E4E4E4;
+  --accent: #A8DADC;
+  --accent-secondary: #FFC1CC;
+  --accent-alt: #B39CD0;
+}
+
+[data-theme='dark'] {
+  --background: #2C2C2C;
+  --foreground: #E4E4E4;
+  --panel-bg: #1e1e1e;
+  --accent: #A8DADC;
+  --accent-secondary: #FFC1CC;
+  --accent-alt: #B39CD0;
+}
+
 /* Projects.css */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap');
 
 /* Main section layout */
 .slider-section {
-  background-color: #c8c4c4;
+  background-color: var(--panel-bg);
   height: 100vh;
   overflow: hidden;
   position: relative;
   font-family: 'Playfair Display', serif;
+  scroll-behavior: smooth;
 }
 
 .slider-container {
@@ -21,10 +41,10 @@
   width: 100vw;
   flex-shrink: 0;
   height: 100vh;
-  border-left: 1px solid #cfc6bb;
-  border-right: 1px solid #cfc6bb;
+  border-left: 1px solid var(--accent-alt);
+  border-right: 1px solid var(--accent-alt);
   overflow: hidden;
-  background-color: #e7dfd8;
+  background-color: var(--panel-bg);
 }
 
 /* Aquerone-style three-panel layout */
@@ -46,11 +66,11 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-left: 1px solid #cfc6bb;
-  border-right: 1px solid #cfc6bb;
-  color: #111;
+  border-left: 1px solid var(--accent-alt);
+  border-right: 1px solid var(--accent-alt);
+  color: var(--foreground);
   width: 100px;
-  background-color: #e7dfd8;
+  background-color: var(--panel-bg);
 }
 
 .spine-left span,
@@ -79,8 +99,8 @@
 }
 
 .aquerone-tags span {
-  background-color: #111;
-  color: white;
+  background-color: var(--foreground);
+  color: var(--background);
   font-size: 0.7rem;
   padding: 4px 10px;
   border-radius: 3px;
@@ -93,14 +113,14 @@
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
   margin: 10px 0;
-  color: #000;
+  color: var(--foreground);
   letter-spacing: 0.02em;
 }
 
 .aquerone-desc {
   font-family: 'Playfair Display', serif;
   font-size: 1.1rem;
-  color: #444;
+  color: #444; /* kept as-is: mid-gray remains consistent in both themes */
   max-width: 600px;
   margin: 0 auto 30px;
   line-height: 1.6;
@@ -115,7 +135,7 @@
 .aquerone-img-wrap img {
   max-width: 60%;
   height: auto;
-  border: 1px solid #b9b1a9;
+  border: 1px solid var(--accent-alt);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   border-radius: 6px;
   transition: transform 0.3s ease;
@@ -127,7 +147,7 @@
 
 /* Featured Intro Card */
 .featured-card {
-  background-color: #e7dfd8;
+  background-color: var(--panel-bg);
   min-width: 600px;
   max-width: 700px;
   padding: 60px 40px;
@@ -146,8 +166,8 @@
 
 .featured-heading {
   font-family: 'Playfair Display', serif;
-  background-color: #111;
-  color: #e7dfd8;
+  background-color: var(--foreground);
+  color: var(--panel-bg);
   font-size: 4rem;
   padding: 10px 20px;
   display: inline-block;
@@ -167,7 +187,7 @@
   margin-top: 40px;
   font-family: 'Playfair Display', serif;
   max-width: 520px;
-  color: #111;
+  color: var(--foreground);
   text-align: left;
 }
 
@@ -177,8 +197,8 @@
   float: left;
   margin-right: 10px;
   font-family: 'Playfair Display', serif;
-  background-color: #111;
-  color: #e7dfd8;
+  background-color: var(--foreground);
+  color: var(--panel-bg);
   padding: 0 10px;
   line-height: 1;
 }
@@ -225,7 +245,7 @@
   margin-top: 1px;
   display: inline-block;
   font-size: 0.95rem;
-  color: #007aff;
+  color: var(--accent);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s ease;
@@ -235,6 +255,7 @@
   color: #0044aa;
 }
 
+/* Responsive: Tablets and below */
 @media (max-width: 768px) {
   .feature-card {
     min-width: 450px;
@@ -249,7 +270,7 @@
     line-height: 1.6;
     margin-top: 40px;
     max-width: 330px;
-    color: #111;
+    color: var(--foreground);
     text-align: left;
   }
 
@@ -261,13 +282,13 @@
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
     margin: 10px 0;
-    color: #000;
+    color: var(--foreground);
     letter-spacing: 0.02em;
   }
 
   .aquerone-tags span {
-    background-color: #111;
-    color: white;
+    background-color: var(--foreground);
+    color: var(--background);
     font-size: 0.3rem;
     padding: 4px 8px;
     border-radius: 3px;
@@ -384,6 +405,8 @@
   .aquerone-img-wrap img {
     max-width: 95%;
   }
+
   .slider-tab.aquerone-style .spine-left {
-    writing-mode: horizontal-tb;}
+    writing-mode: horizontal-tb;
+  }
 }

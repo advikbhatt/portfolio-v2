@@ -1,0 +1,75 @@
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999;
+  overflow: hidden;
+  background: transparent;
+}
+
+.panel {
+  width: 50%;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.textleft {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 4vw;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  user-select: none;
+  line-height: 1;
+  text-align: right;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
+.textright {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 4vw;
+  font-weight: 1200;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  user-select: none;
+  line-height: 1;
+  text-align: left;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
+
+.textleft.hidden {
+  opacity: 0;
+}.textright.hidden {
+  opacity: 0;
+}
+
+
+

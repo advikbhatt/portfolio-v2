@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import Loader from './components/Loader/Loader';
 import Hero from './components/Hero/Hero';
 import Projects from './components/Projects/Projects';
 import About from './components/About/About';
@@ -12,15 +13,18 @@ export default function HomePage() {
 
   return (
     <>
-      
-        <>
-          <Hero />
-          <Projects />
-          <About />
-          <Imagegrid />
-          <Skills />
-          <Footer />
-        </>
+      {/* Render main content always */}
+      <Hero />
+      <Projects />
+      <About />
+      <Imagegrid />
+      <Skills />
+      <Footer />
+
+      {/* Loader overlays on top */}
+      {!loadingDone && (
+        <Loader onComplete={() => setLoadingDone(true)} />
+      )}
     </>
   );
 }

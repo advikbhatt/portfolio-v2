@@ -1,6 +1,6 @@
 /* Image Grid Layout */
 .image-grid-section {
-  background: #e9e1d7;
+  background: var(--panel-bg);
   padding: 2rem 1rem;
 }
 
@@ -13,11 +13,11 @@
 }
 
 .image-frame {
-    cursor: none;
+  cursor: none;
   overflow: hidden;
   aspect-ratio: 2.5 / 1.5;
-  background: #fff;
-  border: 1px solid #bbb;
+  background: var(--card-bg, #fff);
+  border: 1px solid var(--border-color, #bbb);
   position: relative;
 }
 
@@ -38,9 +38,9 @@
   pointer-events: none;
   width: 120px;
   height: 120px;
-  background-color: rgba(210, 210, 210, 0.75);
+  background-color: var(--hover-circle-bg, rgba(210, 210, 210, 0.75));
   border-radius: 50%;
-  color: white;
+  color: var(--foreground);
   display: flex;
   align-items: center;
   justify-content: center;

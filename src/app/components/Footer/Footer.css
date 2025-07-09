@@ -1,13 +1,13 @@
 .footer {
-  background-color: #e7dfd8;
+  background-color: var(--panel-bg);
   padding: 60px 40px;
   font-family: 'Georgia', serif;
-  color: #111;
+  color: var(--foreground);
 }
 
 .footer-line {
   border: none;
-  border-top: 1px solid #444;
+  border-top: 1px solid var(--border-color, #444);
   margin: 20px 0;
 }
 
@@ -19,8 +19,8 @@
 }
 
 .footer-email {
-  background-color: #111;
-  color: #e7dfd8;
+  background-color: var(--foreground);
+  color: var(--panel-bg);
   padding: 0 16px;
   display: inline-block;
   font-family: 'Alfa Slab One', serif;
@@ -42,11 +42,9 @@
   gap: 10px;
 }
 
-
-
 .footer-right a {
   text-decoration: none;
-  color: #111;
+  color: var(--foreground);
   font-weight: bold;
 }
 
@@ -55,9 +53,7 @@
   font-weight: bold;
 }
 
-
 @media (max-width: 768px) {
-
   .footer-cta {
     text-align: center;
     font-size: 1rem;
