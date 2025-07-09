@@ -1,21 +1,4 @@
-/* Theme Variables */
-:root {
-  --background: #ffffff;
-  --foreground: #2C2C2C;
-  --panel-bg: #E4E4E4;
-  --accent: #A8DADC;
-  --accent-secondary: #FFC1CC;
-  --accent-alt: #B39CD0;
-}
 
-[data-theme='dark'] {
-  --background: #2C2C2C;
-  --foreground: #E4E4E4;
-  --panel-bg: #1e1e1e;
-  --accent: #A8DADC;
-  --accent-secondary: #FFC1CC;
-  --accent-alt: #B39CD0;
-}
 
 /* Projects.css */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap');
@@ -41,8 +24,8 @@
   width: 100vw;
   flex-shrink: 0;
   height: 100vh;
-  border-left: 1px solid var(--accent-alt);
-  border-right: 1px solid var(--accent-alt);
+  /* border-left: 1px solid var(--foreground); */
+  border-right: 1px solid var(--foreground);
   overflow: hidden;
   background-color: var(--panel-bg);
 }
@@ -66,8 +49,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-left: 1px solid var(--accent-alt);
-  border-right: 1px solid var(--accent-alt);
+  /* border-left: 1px solid var(--foreground); */
+  border-right: 1px solid var(--foreground);
   color: var(--foreground);
   width: 100px;
   background-color: var(--panel-bg);
@@ -120,7 +103,7 @@
 .aquerone-desc {
   font-family: 'Playfair Display', serif;
   font-size: 1.1rem;
-  color: #444; /* kept as-is: mid-gray remains consistent in both themes */
+  color: #b8b8b8; /* kept as-is: mid-gray remains consistent in both themes */
   max-width: 600px;
   margin: 0 auto 30px;
   line-height: 1.6;
@@ -135,7 +118,6 @@
 .aquerone-img-wrap img {
   max-width: 60%;
   height: auto;
-  border: 1px solid var(--accent-alt);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   border-radius: 6px;
   transition: transform 0.3s ease;
@@ -155,7 +137,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  border-left: 1px solid #aaa;
+  /* border-left: 1px solid #aaa; */
 }
 
 .featured-labels {
@@ -245,14 +227,14 @@
   margin-top: 1px;
   display: inline-block;
   font-size: 0.95rem;
-  color: var(--accent);
+  color: #0044aa;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s ease;
 }
 
 .project-live-link:hover {
-  color: #0044aa;
+  color: #4370b5;
 }
 
 /* Responsive: Tablets and below */

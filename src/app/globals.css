@@ -1,21 +1,23 @@
 :root {
-  --background: #ffffff;
-  --foreground: #2C2C2C;
-  --panel-bg: #E4E4E4;
-  --accent: #A8DADC;
-  --accent-secondary: #FFC1CC;
-  --accent-alt: #B39CD0;
 
+  --background: #2C2C2C;
+  --foreground: #E4E4E4;
+  --panel-bg: #1e1e1e;
+  --accent: #ffffff;
+  --accent-secondary: #f5f5f5;
+  --accent-alt: #ffffff;
   scroll-behavior: smooth; /* enable smooth scroll globally */
 }
 
 [data-theme='dark'] {
-  --background: #2C2C2C;
-  --foreground: #E4E4E4;
-  --panel-bg: #1e1e1e;
+  --background: #ffffff;
+  --foreground: #2C2C2C;
+  --panel-bg: #E4E4E4;
   --accent: #A8DADC;
-  --accent-secondary: #FFC1CC;
-  --accent-alt: #B39CD0;
+  --accent-secondary: #bebebe;
+  --accent-alt: #b7b7b7;
+
+
 }
 
 html,

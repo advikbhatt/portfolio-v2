@@ -112,7 +112,7 @@ export default function Hero() {
             onClick={toggleTheme}
             aria-label="Toggle Theme"
           >
-            {theme === 'light' ? <BsMoonStarsFill /> : <BsSunFill />}
+            {theme === 'dark' ? <BsMoonStarsFill /> : <BsSunFill />}
           </button>
         </div>
 

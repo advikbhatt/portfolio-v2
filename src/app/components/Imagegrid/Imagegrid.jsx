@@ -1,8 +1,11 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./Imagegrid.css";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-// 🖼️ Image data with hover text
+gsap.registerPlugin(ScrollTrigger);
+
 const images = [
   {
     src: "https://media.licdn.com/dms/image/v2/D5622AQHJJDznZ8n60w/feedshare-shrink_800/B56ZetFc84HQAk-/0/1750955582223?e=1753920000&v=beta&t=OsKmjfcucAmipyqBm9ALn1DCIAbYqieR8XsEtV4N5oM",
@@ -33,6 +36,22 @@ const Imagegrid = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
 
+  const imageRefs = useRef([]);
+
+  useEffect(() => {
+    gsap.from(imageRefs.current, {
+      y: 60,
+      opacity: 0,
+      duration: 1,
+      ease: "power3.out",
+      stagger: 0.2,
+      scrollTrigger: {
+        trigger: ".image-grid-section",
+        start: "top 85%",
+      },
+    });
+  }, []);
+
   const handlePointerMove = (e, index) => {
     const rect = e.currentTarget.getBoundingClientRect();
     setCursorPos({
@@ -55,6 +74,7 @@ const Imagegrid = () => {
             <div
               key={currentIndex}
               className="image-frame"
+              ref={(el) => (imageRefs.current[currentIndex] = el)}
               onPointerMove={(e) => handlePointerMove(e, currentIndex)}
               onPointerLeave={handlePointerLeave}
             >

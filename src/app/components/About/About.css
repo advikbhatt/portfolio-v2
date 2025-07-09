@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap');
 
 :root {
-    --card-bg: #f5f5f5; /* Light background for cards */
+    --card-bg: #393939; /* Dark background for cards */
 
 }
 
 [data-theme='dark'] {
-    --card-bg: #393939; /* Dark background for cards */
+    --card-bg: #f5f5f5; /* Light background for cards */
 
 }
 
@@ -79,7 +79,7 @@
 }
 
 .exp-card {
-  border: 0px dashed var(--accent, #333);
+  border: 0px dashed rgb(130, 130, 130);
   padding: 2rem;
   border-radius: 12px;
 background: var(--card-bg);
