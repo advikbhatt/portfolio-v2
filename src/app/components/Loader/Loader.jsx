@@ -16,6 +16,8 @@ export default function Loader({ onComplete }) {
     'https://images.pexels.com/photos/698500/pexels-photo-698500.jpeg',
     'https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg',
     'https://images.pexels.com/photos/247932/pexels-photo-247932.jpeg',
+    'https://images.pexels.com/photos/32924879/pexels-photo-32924879/free-photo-of-vibrant-ganga-aarti-ceremony-in-varanasi.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    'https://images.pexels.com/photos/32920051/pexels-photo-32920051.jpeg',
   ];
 
   const [index, setIndex] = useState(0);
